@@ -1,0 +1,13 @@
+{
+  "DESIGN_NAME": "ring_counter",
+  "VERILOG_FILES": [
+    "dir::src/ring_counter.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10,
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 100, 100],
+  "CORE_AREA": [10, 10, 90, 90]
+}

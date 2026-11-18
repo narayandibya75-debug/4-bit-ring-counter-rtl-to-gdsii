@@ -1,0 +1,102 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ring_counter
+  CLASS BLOCK ;
+  FOREIGN ring_counter ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 100.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 28.940 10.640 30.540 90.000 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 25.640 10.640 27.240 90.000 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 51.040 4.000 51.640 ;
+    END
+  END clk
+  PIN q[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 54.440 100.000 55.040 ;
+    END
+  END q[0]
+  PIN q[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 51.040 100.000 51.640 ;
+    END
+  END q[1]
+  PIN q[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 44.240 100.000 44.840 ;
+    END
+  END q[2]
+  PIN q[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 47.640 100.000 48.240 ;
+    END
+  END q[3]
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 47.640 4.000 48.240 ;
+    END
+  END rst
+  OBS
+      LAYER nwell ;
+        RECT 9.930 10.795 89.890 89.950 ;
+      LAYER li1 ;
+        RECT 10.120 10.795 89.700 89.845 ;
+      LAYER met1 ;
+        RECT 10.120 10.640 90.090 90.000 ;
+      LAYER met2 ;
+        RECT 11.590 10.695 90.070 89.945 ;
+      LAYER met3 ;
+        RECT 4.000 55.440 96.000 89.925 ;
+        RECT 4.000 54.040 95.600 55.440 ;
+        RECT 4.000 52.040 96.000 54.040 ;
+        RECT 4.400 50.640 95.600 52.040 ;
+        RECT 4.000 48.640 96.000 50.640 ;
+        RECT 4.400 47.240 95.600 48.640 ;
+        RECT 4.000 45.240 96.000 47.240 ;
+        RECT 4.000 43.840 95.600 45.240 ;
+        RECT 4.000 10.715 96.000 43.840 ;
+  END
+END ring_counter
+END LIBRARY
+

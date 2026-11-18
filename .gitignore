@@ -1,0 +1,15 @@
+# OpenLane temporary run data
+runs/
+
+# Compiled simulation executable
+ring_counter_sim
+
+# Temporary files
+*.vvp
+*.o
+*.tmp
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
